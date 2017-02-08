@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        
+        <TextView
+            android:id="@+id/showmsg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="hello"
+            />
+        
+        
+        
+        <Button
+            android:id="@+id/lowper_location_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="低电量定位上传"
+            android:onClick="onClick"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="50dip"
+            />
+        
+        <RadioGroup 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/work_mode_group"
+            >
+        
+	        <RadioButton
+	            android:id="@+id/default_mode   "
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="一般模式"
+	            android:checked="true"
+	            android:textColor="@android:color/black"
+	            />
+	        
+	        <RadioButton
+	            android:id="@+id/wifi_mode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="wifi模式"
+	            android:checked="false"
+	            android:textColor="@android:color/black"
+	            />
+	        
+	        <RadioButton
+	            android:id="@+id/gps_mode"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Gps模式"
+	            android:checked="false"
+	            android:textColor="@android:color/black"
+	            />
+        
+        </RadioGroup>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址："
+                />
+            <EditText 
+                android:id="@+id/et_ip1"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:numeric="integer" 
+                android:singleLine="true"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                />
+            <EditText 
+                android:id="@+id/et_ip2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:numeric="integer" 
+                 android:singleLine="true"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                />
+            <EditText 
+                android:id="@+id/et_ip3"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                 android:singleLine="true" 
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                />
+            <EditText 
+                android:id="@+id/et_ip4"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:numeric="integer" 
+                android:singleLine="true"
+                />
+          
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口号："
+                />
+            
+            <EditText 
+                android:id="@+id/et_port"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:numeric="integer" 
+                />   
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+</ScrollView>
